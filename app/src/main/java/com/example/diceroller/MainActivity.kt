@@ -27,9 +27,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getRandomDiceImage(): Int {
-        val randomInt = (1..6).random()
 
-        return when (randomInt) {
+        return when ((1..6).random()) {
             1 -> R.drawable.dice_1
             2 -> R.drawable.dice_2
             3 -> R.drawable.dice_3
