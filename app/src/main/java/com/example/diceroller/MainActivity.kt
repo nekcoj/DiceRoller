@@ -19,11 +19,19 @@ class MainActivity : AppCompatActivity() {
 
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener { rollDice() }
+
+        val clearButton: Button = findViewById(R.id.clear_button)
+        clearButton.setOnClickListener { clearRolls() }
     }
 
     private fun rollDice(){
         diceImage1.setImageResource(getRandomDiceImage())
         diceImage2.setImageResource(getRandomDiceImage())
+    }
+
+    private fun clearRolls(){
+        diceImage1.setImageResource(R.drawable.empty_dice)
+        diceImage2.setImageResource(R.drawable.empty_dice)
     }
 
     private fun getRandomDiceImage(): Int {

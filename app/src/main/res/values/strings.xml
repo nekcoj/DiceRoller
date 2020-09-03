@@ -3,5 +3,6 @@
     <string name="roll_label">Roll</string>
     <string name="count_up_button">Count Up</string>
     <string name="reset_button">Reset</string>
+    <string name="clear_rolls">Clear</string>
 
 </resources>
